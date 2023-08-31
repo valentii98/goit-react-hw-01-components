@@ -1,15 +1,4 @@
-const createColor = () => {
-  const color =
-    'rgba(' +
-    Math.round(Math.random() * 255) +
-    ',' +
-    Math.round(Math.random() * 255) +
-    ',' +
-    Math.round(Math.random() * 255) +
-    ')';
-
-  return color;
-};
+import { createColor } from 'components/GlobalStyle';
 
 // eslint-disable-next-line no-undef
 export const Statistics = ({ title, stats}) => {
@@ -22,7 +11,7 @@ export const Statistics = ({ title, stats}) => {
           return (
             <li key={id} style={{ backgroundColor: createColor() }}>
               <span>{label}</span>
-              <span>{percentage}</span>
+              <span>{percentage}%</span>
             </li>
           );
         })}
