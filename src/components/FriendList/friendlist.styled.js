@@ -9,7 +9,7 @@ export const Status = styled.span`
   margin: auto 10px;
 `;
 
-export const List = styled.li`
+export const Item = styled.li`
   display: flex;
   flex-direction: row;
   justify-content: center;

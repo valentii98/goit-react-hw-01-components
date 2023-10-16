@@ -1,6 +1,5 @@
 import { createColor } from 'components/GlobalStyle';
 
-// eslint-disable-next-line no-undef
 export const Statistics = ({ title, stats}) => {
   return (
     <section>
