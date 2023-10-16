@@ -1,4 +1,4 @@
-import { Table, Head, Body, Row, Data } from './transaction.styled.js';
+import { Table, Head, Body} from './transaction.styled.js';
 
 export const TransactionHistory = ({ items }) => {
   return (
