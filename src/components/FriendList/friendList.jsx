@@ -1,15 +1,15 @@
-export const FriendList = ({ friends }) => {
+import { Status, List, Text, Image } from "./friendlist.styled.js"
+
+export const FriendList = ({ friends, isOnline }) => {
     return (
       <div>
-        <ul >
+        <ul>
           {friends.map(({ avatar, name, isOnline, id }) => (
-            <li  key={id}>
-              <span>
-                {isOnline}
-              </span>
-              <img src={avatar} alt={name} />
-              <p>{name}</p>
-            </li>
+            <List  key={id}>
+              <Status isOnline={isOnline} > </Status>
+              <Image src={avatar} alt={name} />
+              <Text>{name}</Text>
+            </List>
           ))}
         </ul>
       </div>
